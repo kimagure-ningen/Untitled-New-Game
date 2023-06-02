@@ -365,7 +365,15 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/TimeRewinder/CircularBuffer.cs"
+"Assets/TimeRewinder/ImplementedObjects/GenericRewind.cs"
+"Assets/TimeRewinder/ImplementedObjects/ScaleRewind.cs"
+"Assets/TimeRewinder/ImplementedObjects/TimerRewind.cs"
+"Assets/TimeRewinder/RewindAbstract.cs"
+"Assets/TimeRewinder/RewindManager.cs"
+"Assets/_project/Scripts/Barrel.cs"
 "Assets/_project/Scripts/Character.cs"
+"Assets/_project/Scripts/TimeController.cs"
 -langversion:9.0
 
 /deterministic
