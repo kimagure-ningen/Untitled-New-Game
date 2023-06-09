@@ -373,6 +373,7 @@
 "Assets/TimeRewinder/RewindManager.cs"
 "Assets/_project/Scripts/Barrel.cs"
 "Assets/_project/Scripts/Character.cs"
+"Assets/_project/Scripts/ScreenCanvas.cs"
 "Assets/_project/Scripts/TimeController.cs"
 -langversion:9.0
 

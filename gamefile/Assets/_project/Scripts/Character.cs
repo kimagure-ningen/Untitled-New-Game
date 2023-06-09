@@ -10,6 +10,8 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
         characterController = GetComponent<CharacterController>();
     }
 

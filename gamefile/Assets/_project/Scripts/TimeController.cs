@@ -12,12 +12,27 @@ public class TimeController : MonoBehaviour
     [SerializeField]
     private Slider slider;
 
+    [SerializeField]
+    private GameObject rewindEffectPanel;
+
 
     private bool isRewinding = false;
     private float rewindValue = 0;
     private float rewindIntensity = 0.003f;
 
     private float rewindSeconds = 1.5f;
+
+    private void Awake()
+    {
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("TimeController");
+
+        if (objects.Length > 1)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
 
     private void Update()
     {
@@ -32,10 +47,15 @@ public class TimeController : MonoBehaviour
 
     public void OnSliderValueChanged()
     {
-        if (slider.value < 80)
+        if (slider.value < 50)
         {
             isRewinding = true;
+
             Invoke("WarpToScene", rewindSeconds);
+            rewindEffectPanel.SetActive(true);
+        } else if (slider.value >= 50)
+        {
+            
         }
     }
 
@@ -44,6 +64,8 @@ public class TimeController : MonoBehaviour
         isRewinding = false;
         rewindManager.StopRewindTimeBySeconds();
         rewindValue = 0;
+
+        rewindEffectPanel.SetActive(false);
 
         SceneManager.LoadScene("PastTime");
     }
