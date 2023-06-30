@@ -329,6 +329,8 @@
 -r:"/Users/daitoyamagishi/Documents/Untitled-New-Game/gamefile/Library/PackageCache/com.unity.burst@1.7.3/Unity.Burst.Unsafe.dll"
 -r:"/Users/daitoyamagishi/Documents/Untitled-New-Game/gamefile/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"/Users/daitoyamagishi/Documents/Untitled-New-Game/gamefile/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PPv2URPConverters.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Burst.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Burst.ref.dll"
@@ -373,6 +375,7 @@
 "Assets/TimeRewinder/RewindManager.cs"
 "Assets/_project/Scripts/Barrel.cs"
 "Assets/_project/Scripts/Character.cs"
+"Assets/_project/Scripts/DungeonCharacter.cs"
 "Assets/_project/Scripts/ScreenCanvas.cs"
 "Assets/_project/Scripts/TimeController.cs"
 -langversion:9.0
